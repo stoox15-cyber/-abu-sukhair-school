@@ -152,6 +152,35 @@ background:#1d5639;
 <a class="back" href="index.html">⬅️ العودة للرئيسية</a>
 
 </div>
+<div style="margin:30px auto;max-width:600px;">
+  <button onclick="addTeacher()" style="width:100%;padding:18px;border:0;border-radius:15px;background:#086b48;color:white;font-size:22px;font-weight:bold;">
+    ➕ إضافة معلم
+  </button>
+</div>
 
+<script>
+function addTeacher(){
+  const name = prompt("اكتب اسم المعلم:");
+  if(!name) return;
+
+  const subject = prompt("اكتب الاختصاص:");
+  const grade = prompt("اكتب الصف:");
+
+  const card = document.createElement("div");
+  card.style.cssText =
+    "margin:15px auto;padding:20px;max-width:600px;background:white;border-radius:15px;text-align:right;box-shadow:0 3px 12px #ccc;";
+
+  card.innerHTML = `
+    <h2>👨‍🏫 ${name}</h2>
+    <p>📚 الاختصاص: ${subject || "غير محدد"}</p>
+    <p>🏫 الصف: ${grade || "غير محدد"}</p>
+    <button onclick="this.parentElement.remove()" style="padding:10px 20px;border:0;border-radius:10px;background:#c62828;color:white;">
+      حذف
+    </button>
+  `;
+
+  document.body.appendChild(card);
+}
+</script>
 </body>
 </html>
