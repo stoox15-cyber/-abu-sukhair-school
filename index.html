@@ -1,1 +1,133 @@
-html>
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>مدرسة أبو صخير الابتدائية للبنين</title>
+
+<style>
+*{box-sizing:border-box}
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:#f5f7f6;
+color:#17211c
+}
+header{
+background:linear-gradient(135deg,#075b3a,#0b8a58);
+color:white;
+padding:30px 18px;
+text-align:center;
+border-radius:0 0 28px 28px
+}
+h1{font-size:25px;margin:10px 0}
+.sub{font-size:16px}
+main{padding:20px;max-width:760px;margin:auto}
+.notice{
+background:white;
+border-radius:18px;
+padding:18px;
+margin-bottom:18px;
+box-shadow:0 4px 15px #0001
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:14px
+}
+.card{
+border:0;
+background:white;
+border-radius:18px;
+padding:22px 10px;
+font-size:18px;
+font-weight:bold;
+box-shadow:0 4px 15px #0001;
+cursor:pointer
+}
+.card:active{transform:scale(.97)}
+.icon{
+display:block;
+font-size:32px;
+margin-bottom:8px
+}
+footer{
+text-align:center;
+padding:25px 15px;
+color:#555
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>مدرسة أبو صخير الابتدائية للبنين</h1>
+<div class="sub">المناذرة – محافظة النجف الأشرف</div>
+</header>
+
+<main>
+
+<section class="notice">
+<b>📢 آخر الإعلانات</b>
+<p>مرحباً بكم في التطبيق الرسمي للمدرسة.</p>
+</section>
+
+<section class="grid">
+
+<button class="card" onclick="showMsg('📢 الإعلانات')">
+<span class="icon">📢</span>
+الإعلانات
+</button>
+
+<button class="card" onclick="showMsg('📰 أخبار المدرسة')">
+<span class="icon">📰</span>
+أخبار المدرسة
+</button>
+
+<button class="card" onclick="showMsg('👨‍🎓 الطلاب')">
+<span class="icon">👨‍🎓</span>
+الطلاب
+</button>
+
+<button class="card" onclick="showMsg('👨‍🏫 المعلمون')">
+<span class="icon">👨‍🏫</span>
+المعلمون
+</button>
+
+<button class="card" onclick="showMsg('📅 الجدول')">
+<span class="icon">📅</span>
+الجدول
+</button>
+
+<button class="card" onclick="showMsg('📊 النتائج')">
+<span class="icon">📊</span>
+النتائج
+</button>
+
+<button class="card" onclick="showMsg('📞 التواصل')">
+<span class="icon">📞</span>
+التواصل
+</button>
+
+<button class="card" onclick="showMsg('🏫 عن المدرسة')">
+<span class="icon">🏫</span>
+عن المدرسة
+</button>
+
+</section>
+
+</main>
+
+<footer>
+مدرسة أبو صخير الابتدائية للبنين
+</footer>
+
+<script>
+function showMsg(text){
+alert(text);
+}
+</script>
+
+</body>
+</html>
