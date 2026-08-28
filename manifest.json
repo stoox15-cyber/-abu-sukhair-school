@@ -1,0 +1,10 @@
+{
+  "name": "مدرسة أبو صخير الابتدائية للبنين",
+  "short_name": "مدرسة أبو صخير",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f3f6f4",
+  "theme_color": "#174d36",
+  "dir": "rtl",
+  "lang": "ar"
+}
