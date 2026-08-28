@@ -1,8 +1,9 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
 <title>مدرسة أبو صخير الابتدائية للبنين</title>
 
 <style>
@@ -10,113 +11,128 @@
 
 body{
 margin:0;
-font-family:Arial,sans-serif;
-background:#f5f7f6;
-color:#17211c;
+font-family:Arial,Tahoma,sans-serif;
+background:#f3f6f4;
+color:#1d2b24;
 }
 
-header{
-background:linear-gradient(135deg,#075b3a,#0b8a58);
+.hero{
+background:linear-gradient(135deg,#174d36,#2d7655);
 color:white;
-padding:30px 18px;
 text-align:center;
-border-radius:0 0 30px 30px;
+padding:45px 20px 40px;
+border-radius:0 0 40px 40px;
+box-shadow:0 5px 20px #bbb;
 }
 
-header h1{
-font-size:28px;
-margin:10px 0;
-}
-
-header p{
-font-size:18px;
-margin:8px 0;
-}
-
-main{
-padding:20px;
-max-width:800px;
-margin:auto;
-}
-
-.notice{
+.logo{
+width:105px;
+height:105px;
+border-radius:50%;
 background:white;
-border-radius:20px;
-padding:22px;
-margin-bottom:25px;
-box-shadow:0 5px 20px #00000012;
+margin:auto;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:55px;
+box-shadow:0 4px 15px #123;
 }
 
-.notice h2{
-margin-top:0;
+.hero h1{
+font-size:30px;
+margin:20px 0 10px;
+}
+
+.hero p{
+font-size:18px;
+margin:5px 0;
+}
+
+.container{
+max-width:900px;
+margin:auto;
+padding:25px 15px 40px;
+}
+
+.welcome{
+background:white;
+padding:20px;
+border-radius:25px;
+text-align:center;
+box-shadow:0 3px 15px #ddd;
+margin-bottom:22px;
+}
+
+.welcome h2{
+color:#216044;
+margin:0 0 8px;
 }
 
 .grid{
 display:grid;
-grid-template-columns:1fr 1fr;
-gap:20px;
-}
-
-.card{
-background:white;
-border-radius:22px;
-padding:30px 15px;
-text-align:center;
-box-shadow:0 5px 20px #00000012;
-text-decoration:none;
-color:#3182ed;
-transition:.2s;
-}
-
-.card:active{
-transform:scale(.97);
-}
-
-.icon{
-font-size:45px;
-display:block;
-margin-bottom:15px;
-}
-
-.card h2{
-margin:0;
-font-size:25px;
-}
-
-section{
-background:white;
-margin-top:25px;
-padding:25px;
-border-radius:22px;
-box-shadow:0 5px 20px #00000012;
-}
-
-section h2{
-color:#087b4b;
-}
-
-footer{
-text-align:center;
-padding:30px;
-color:#777;
-}
-
-@media(max-width:600px){
-.grid{
-grid-template-columns:1fr 1fr;
+grid-template-columns:repeat(2,1fr);
 gap:15px;
 }
 
 .card{
-padding:25px 10px;
+text-decoration:none;
+color:#1d2b24;
+background:white;
+padding:25px 12px;
+border-radius:24px;
+text-align:center;
+box-shadow:0 4px 15px #ddd;
+transition:.2s;
+display:block;
 }
 
-.card h2{
-font-size:21px;
+.card:active{
+transform:scale(.96);
 }
 
-header h1{
-font-size:24px;
+.icon{
+font-size:42px;
+display:block;
+margin-bottom:10px;
+}
+
+.card h3{
+margin:0;
+font-size:19px;
+}
+
+.footer{
+background:#174d36;
+color:white;
+text-align:center;
+padding:25px 15px;
+margin-top:20px;
+}
+
+.footer p{
+margin:7px 0;
+}
+
+@media(max-width:500px){
+.hero h1{
+font-size:25px;
+}
+
+.grid{
+grid-template-columns:repeat(2,1fr);
+gap:12px;
+}
+
+.card{
+padding:20px 8px;
+}
+
+.icon{
+font-size:36px;
+}
+
+.card h3{
+font-size:17px;
 }
 }
 </style>
@@ -124,299 +140,91 @@ font-size:24px;
 
 <body>
 
-<header>
+<section class="hero">
+
+<div class="logo">🏫</div>
+
 <h1>مدرسة أبو صخير الابتدائية للبنين</h1>
+
 <p>المناذرة – محافظة النجف الأشرف</p>
-</header>
 
-<main>
+<p>بوابتكم الإلكترونية التعليمية</p>
 
-<div class="notice">
-<h2>📢 آخر الإعلانات</h2>
-<p>مرحباً بكم في التطبيق الرسمي للمدرسة.</p>
+</section>
+
+<div class="container">
+
+<div class="welcome">
+
+<h2>أهلاً وسهلاً بكم 🌷</h2>
+
+<p>
+الموقع الإلكتروني لمدرسة أبو صخير الابتدائية للبنين
+لمتابعة أخبار المدرسة والإعلانات والدروس والنتائج.
+</p>
+
 </div>
 
 <div class="grid">
 
-<a class="card" href=أخبار المدرسة.html>
+<a class="card" href="أخبار المدرسة.html">
 <span class="icon">📰</span>
-<h2>أخبار المدرسة</h2>
+<h3>أخبار المدرسة</h3>
 </a>
 
-<a class="card" href=href="الإعلانات.html">
+<a class="card" href="الإعلانات.html">
 <span class="icon">📢</span>
-<h2>الإعلانات</h2>
+<h3>الإعلانات</h3>
 </a>
 
-<a class="card" href=المعلمون.html>
+<a class="card" href="المعلمون.html">
 <span class="icon">👨‍🏫</span>
-<h2>المعلمون</h2>
+<h3>المعلمون</h3>
 </a>
 
-<a class="card" href="#students">
+<a class="card" href="الطلاب.html">
 <span class="icon">👨‍🎓</span>
-<h2>الطلاب</h2>
+<h3>الطلاب</h3>
+</a>
+
+<a class="card" href="lessons.html">
+<span class="icon">📚</span>
+<h3>الدروس والمواد</h3>
 </a>
 
 <a class="card" href="#results">
 <span class="icon">📊</span>
-<h2>النتائج</h2> 
-  
-<a class="card" href="lessons.html">
-<span class="icon">📚</span>
-<h2>الدروس والمواد الدراسية</h2>
+<h3>النتائج</h3>
 </a>
 
 <a class="card" href="#schedule">
 <span class="icon">📅</span>
-<h2>الجدول</h2>
-</a>
-
-<a class="card" href="#about">
-<span class="icon">🏫</span>
-<h2>عن المدرسة</h2>
+<h3>الجدول الدراسي</h3>
 </a>
 
 <a class="card" href="#contact">
 <span class="icon">📞</span>
-<h2>التواصل</h2>
+<h3>التواصل معنا</h3>
 </a>
-<section id="news">
 
-  <div style="padding:20px;">
+<a class="card" href="#about">
+<span class="icon">🏫</span>
+<h3>عن المدرسة</h3>
+</a>
 
-    <h2 style="text-align:center;color:#075b3a;font-size:32px;">
-      📰 أخبار المدرسة
-    </h2>
-
-    <p style="text-align:center;font-size:19px;color:#444;">
-      آخر أخبار وفعاليات مدرسة أبو صخير الابتدائية للبنين
-    </p>
-
-    <div style="background:white;border-radius:20px;padding:25px;margin:20px 0;box-shadow:0 5px 18px rgba(0,0,0,.08);">
-
-      <div style="font-size:45px;text-align:center;">🏫</div>
-
-      <h3 style="text-align:center;color:#075b3a;font-size:25px;">
-        مدرسة أبو صخير الابتدائية للبنين
-      </h3>
-
-      <p style="font-size:18px;line-height:2;text-align:right;">
-        نرحب بكم في الموقع الرسمي لمدرسة أبو صخير الابتدائية للبنين،
-        ونسعى إلى تقديم أهم الأخبار والفعاليات والنشاطات المدرسية
-        وكل ما يخص طلبتنا الأعزاء.
-      </p>
-
-    </div>
-
-    <div style="background:white;border-radius:20px;padding:25px;margin:20px 0;box-shadow:0 5px 18px rgba(0,0,0,.08);">
-
-      <div style="font-size:45px;text-align:center;">📢</div>
-
-      <h3 style="text-align:center;color:#075b3a;font-size:25px;">
-        إعلانات المدرسة
-      </h3>
-
-      <p style="font-size:18px;line-height:2;text-align:right;">
-        يتم هنا نشر الإعلانات والتعليمات المهمة الخاصة بالطلبة
-        وأولياء الأمور.
-      </p>
-
-    </div>
-
-    <div style="background:white;border-radius:20px;padding:25px;margin:20px 0;box-shadow:0 5px 18px rgba(0,0,0,.08);">
-
-      <div style="font-size:45px;text-align:center;">🏆</div>
-
-      <h3 style="text-align:center;color:#075b3a;font-size:25px;">
-        نشاطات وإنجازات
-      </h3>
-
-      <p style="font-size:18px;line-height:2;text-align:right;">
-        هنا يتم نشر النشاطات والمسابقات والفعاليات والإنجازات
-        الخاصة بطلبة المدرسة.
-      </p>
-
-    </div>
-
-    <div style="background:white;border-radius:20px;padding:25px;margin:20px 0;box-shadow:0 5px 18px rgba(0,0,0,.08);">
-
-      <div style="font-size:45px;text-align:center;">📅</div>
-
-      <h3 style="text-align:center;color:#075b3a;font-size:25px;">
-        الفعاليات والمواعيد
-      </h3>
-
-      <p style="font-size:18px;line-height:2;text-align:right;">
-        سيتم نشر أهم المواعيد والفعاليات المدرسية القادمة هنا.
-      </p>
-
-    </div>
-
-    <button onclick="location.reload()"
-      style="display:block;margin:30px auto;padding:15px 30px;
-      background:#075b3a;color:white;border:0;border-radius:12px;
-      font-size:18px;">
-      ↩️ العودة للرئيسية
-    </button>
-
-  </div>
-
-</section>
 </div>
-<section id="news" style="padding:25px 15px;">
 
-  <h2 style="text-align:center;color:#075b3a;font-size:30px;margin-bottom:10px;">
-    📰 أخبار المدرسة
-  </h2>
+</div>
 
-  <p style="text-align:center;color:#555;font-size:18px;margin-bottom:25px;">
-    آخر الأخبار والإعلانات والفعاليات الخاصة بمدرسة أبو صخير الابتدائية للبنين
-  </p>
+<footer class="footer">
 
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;">
+<p>مدرسة أبو صخير الابتدائية للبنين</p>
 
-    <div style="background:white;border-radius:20px;padding:22px;box-shadow:0 4px 15px rgba(0,0,0,.08);">
-      <div style="font-size:45px;text-align:center;">📢</div>
-      <h3 style="color:#075b3a;text-align:center;">إعلان مهم</h3>
-      <p style="font-size:17px;line-height:1.8;text-align:center;">
-        سيتم نشر جميع الإعلانات والتعليمات الرسمية الخاصة بالمدرسة هنا.
-      </p>
-    </div>
+<p>المناذرة – النجف الأشرف</p>
 
-    <div style="background:white;border-radius:20px;padding:22px;box-shadow:0 4px 15px rgba(0,0,0,.08);">
-      <div style="font-size:45px;text-align:center;">🏫</div>
-      <h3 style="color:#075b3a;text-align:center;">نشاطات المدرسة</h3>
-      <p style="font-size:17px;line-height:1.8;text-align:center;">
-        تابعوا نشاطات وفعاليات مدرسة أبو صخير الابتدائية للبنين.
-      </p>
-    </div>
+<p>© 2026 جميع الحقوق محفوظة</p>
 
-    <div style="background:white;border-radius:20px;padding:22px;box-shadow:0 4px 15px rgba(0,0,0,.08);">
-      <div style="font-size:45px;text-align:center;">🎓</div>
-      <h3 style="color:#075b3a;text-align:center;">الطلبة</h3>
-      <p style="font-size:17px;line-height:1.8;text-align:center;">
-        أخبار الطلبة والفعاليات والمسابقات والإنجازات المدرسية.
-      </p>
-    </div>
-
-    <div style="background:white;border-radius:20px;padding:22px;box-shadow:0 4px 15px rgba(0,0,0,.08);">
-      <div style="font-size:45px;text-align:center;">👨‍🏫</div>
-      <h3 style="color:#075b3a;text-align:center;">الهيئة التعليمية</h3>
-      <p style="font-size:17px;line-height:1.8;text-align:center;">
-        أخبار المعلمين والهيئة التعليمية والنشاطات التربوية.
-      </p>
-    </div>
-
-  </div>
-
-</section>
-<section id="news">
-<h2>📰 أخبار المدرسة</h2>
-<p>سيتم نشر أخبار ونشاطات المدرسة هنا.</p>
-</section>
-
-<section id="ads">
-<h2>📢 الإعلانات</h2>
-<p>سيتم نشر الإعلانات الرسمية للمدرسة هنا.</p>
-</section>
-
-<section id="teachers">
-<h2>👨‍🏫 المعلمون</h2>
-<p>معلومات وكادر المدرسة سيتم إضافتها هنا.</p>
-</section>
-
-<section id="students">
-<h2>👨‍🎓 الطلاب</h2>
-<p>قسم خاص بالطلاب ومعلوماتهم.</p>
-</section>
-
-<section id="results">
-<h2>📊 النتائج</h2>
-<p>سيتم إضافة نتائج الطلاب هنا.</p>
-</section>
-
-<section id="schedule">
-<h2>📅 الجدول</h2>
-<p>سيتم إضافة جدول الدروس والدوام هنا.</p>
-</section>
-
-<section id="about">
-<h2>🏫 عن المدرسة</h2>
-<p>
-مدرسة أبو صخير الابتدائية للبنين،
-تقع في المناذرة – محافظة النجف الأشرف.
-</p>
-</section>
-
-<section id="contact">
-<h2>📞 التواصل</h2>
-<p>سيتم إضافة معلومات التواصل الرسمية للمدرسة هنا.</p>
-</section>
-
-</main>
-
-<footer>
-مدرسة أبو صخير الابتدائية للبنين © 2026
 </footer>
-<script>
-const pages={
-news:{
-title:"📰 أخبار المدرسة",
-text:"هنا يتم نشر أخبار ونشاطات مدرسة أبو صخير الابتدائية للبنين."
-},
-ads:{
-title:"📢 الإعلانات",
-text:"هنا يتم نشر الإعلانات الرسمية والمواعيد المهمة للمدرسة."
-},
-teachers:{
-title:"👨‍🏫 المعلمون",
-text:"قائمة الكادر التعليمي في مدرسة أبو صخير الابتدائية للبنين."
-},
-students:{
-title:"🎓 الطلاب",
-text:"معلومات وبيانات الطلبة ونشاطاتهم."
-},
-schedule:{
-title:"📅 الجدول",
-text:"سيتم نشر الجداول الدراسية والامتحانية هنا."
-},
-results:{
-title:"📊 النتائج",
-text:"سيتم نشر نتائج الطلبة هنا."
-},
-contact:{
-title:"📞 التواصل",
-text:"للتواصل مع إدارة مدرسة أبو صخير الابتدائية للبنين."
-}
-};
 
-document.querySelectorAll('a.card').forEach(card=>{
-card.addEventListener('click',function(e){
-e.preventDefault();
-let key=this.getAttribute('href').replace('#','');
-let p=pages[key];
-if(!p)return;
-
-document.body.innerHTML=`
-<div style="direction:rtl;font-family:Arial;background:#f5f7f6;min-height:100vh;padding:25px">
-<div style="background:#075b3a;color:white;padding:25px;border-radius:0 0 30px 30px;text-align:center">
-<h1>مدرسة أبو صخير الابتدائية للبنين</h1>
-<p>المناذرة – محافظة النجف الأشرف</p>
-</div>
-
-<div style="background:white;margin:25px 0;padding:30px;border-radius:25px;text-align:right">
-<h2 style="color:#075b3a">${p.title}</h2>
-<p style="font-size:20px;line-height:2">${p.text}</p>
-</div>
-
-<button onclick="location.reload()" 
-style="display:block;margin:auto;padding:15px 35px;border:0;border-radius:15px;background:#075b3a;color:white;font-size:18px">
-⬅️ العودة للرئيسية
-</button>
-</div>`;
-});
-});
-</script>
 </body>
 </html>
