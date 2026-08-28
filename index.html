@@ -228,6 +228,64 @@ font-size:24px;
 <footer>
 مدرسة أبو صخير الابتدائية للبنين © 2026
 </footer>
+<script>
+const pages={
+news:{
+title:"📰 أخبار المدرسة",
+text:"هنا يتم نشر أخبار ونشاطات مدرسة أبو صخير الابتدائية للبنين."
+},
+ads:{
+title:"📢 الإعلانات",
+text:"هنا يتم نشر الإعلانات الرسمية والمواعيد المهمة للمدرسة."
+},
+teachers:{
+title:"👨‍🏫 المعلمون",
+text:"قائمة الكادر التعليمي في مدرسة أبو صخير الابتدائية للبنين."
+},
+students:{
+title:"🎓 الطلاب",
+text:"معلومات وبيانات الطلبة ونشاطاتهم."
+},
+schedule:{
+title:"📅 الجدول",
+text:"سيتم نشر الجداول الدراسية والامتحانية هنا."
+},
+results:{
+title:"📊 النتائج",
+text:"سيتم نشر نتائج الطلبة هنا."
+},
+contact:{
+title:"📞 التواصل",
+text:"للتواصل مع إدارة مدرسة أبو صخير الابتدائية للبنين."
+}
+};
 
+document.querySelectorAll('a.card').forEach(card=>{
+card.addEventListener('click',function(e){
+e.preventDefault();
+let key=this.getAttribute('href').replace('#','');
+let p=pages[key];
+if(!p)return;
+
+document.body.innerHTML=`
+<div style="direction:rtl;font-family:Arial;background:#f5f7f6;min-height:100vh;padding:25px">
+<div style="background:#075b3a;color:white;padding:25px;border-radius:0 0 30px 30px;text-align:center">
+<h1>مدرسة أبو صخير الابتدائية للبنين</h1>
+<p>المناذرة – محافظة النجف الأشرف</p>
+</div>
+
+<div style="background:white;margin:25px 0;padding:30px;border-radius:25px;text-align:right">
+<h2 style="color:#075b3a">${p.title}</h2>
+<p style="font-size:20px;line-height:2">${p.text}</p>
+</div>
+
+<button onclick="location.reload()" 
+style="display:block;margin:auto;padding:15px 35px;border:0;border-radius:15px;background:#075b3a;color:white;font-size:18px">
+⬅️ العودة للرئيسية
+</button>
+</div>`;
+});
+});
+</script>
 </body>
 </html>
