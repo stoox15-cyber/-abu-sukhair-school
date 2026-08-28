@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>المعلمون - مدرسة أبو صخير الابتدائية للبنين</title>
+
+<style>
+*{
+box-sizing:border-box;
+}
+
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:#f5f7f6;
+color:#17211c;
+}
+
+header{
+background:linear-gradient(135deg,#276b48,#338458);
+color:white;
+text-align:center;
+padding:55px 20px;
+border-radius:0 0 45px 45px;
+}
+
+header h1{
+margin:0;
+font-size:34px;
+}
+
+header p{
+font-size:20px;
+margin-top:18px;
+}
+
+.container{
+padding:30px 18px;
+max-width:900px;
+margin:auto;
+}
+
+.title{
+background:white;
+border-radius:28px;
+padding:25px;
+text-align:center;
+box-shadow:0 8px 25px #00000010;
+margin-bottom:25px;
+}
+
+.title h2{
+color:#276b48;
+font-size:30px;
+margin:0 0 12px;
+}
+
+.title p{
+font-size:18px;
+line-height:1.8;
+}
+
+.teacher{
+background:white;
+border-radius:25px;
+padding:25px;
+margin-bottom:18px;
+box-shadow:0 6px 20px #00000012;
+display:flex;
+align-items:center;
+gap:20px;
+}
+
+.teacher-icon{
+width:75px;
+height:75px;
+border-radius:50%;
+background:#e8f3ed;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:38px;
+flex-shrink:0;
+}
+
+.teacher h3{
+margin:0 0 8px;
+font-size:23px;
+color:#276b48;
+}
+
+.teacher p{
+margin:0;
+font-size:17px;
+color:#555;
+}
+
+.back{
+display:block;
+width:260px;
+margin:30px auto;
+padding:17px;
+text-align:center;
+background:#276b48;
+color:white;
+text-decoration:none;
+border-radius:20px;
+font-size:20px;
+}
+
+.back:hover{
+background:#1d5639;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>مدرسة أبو صخير الابتدائية للبنين</h1>
+<p>المناذرة – محافظة النجف الأشرف</p>
+</header>
+
+<div class="container">
+
+<div class="title">
+<h2>👨‍🏫 المعلمون</h2>
+<p>
+كادرنا التعليمي هو أساس النجاح والتميّز،
+ونسعى دائمًا إلى تقديم أفضل مستوى تعليمي وتربوي لأبنائنا الطلبة.
+</p>
+</div>
+
+<div class="teacher">
+<div class="teacher-icon">👨‍🏫</div>
+<div>
+<h3>إدارة المدرسة</h3>
+<p>الهيئة الإدارية والتربوية</p>
+</div>
+</div>
+
+<div class="teacher">
+<div class="teacher-icon">👨‍🏫</div>
+<div>
+<h3>الكادر التعليمي</h3>
+<p>معلمو مدرسة أبو صخير الابتدائية للبنين</p>
+</div>
+</div>
+
+<a class="back" href="index.html">⬅️ العودة للرئيسية</a>
+
+</div>
+
+</body>
+</html>
