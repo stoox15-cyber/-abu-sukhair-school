@@ -7,54 +7,117 @@
 
 <style>
 *{box-sizing:border-box}
+
 body{
 margin:0;
 font-family:Arial,sans-serif;
 background:#f5f7f6;
-color:#17211c
+color:#17211c;
 }
+
 header{
 background:linear-gradient(135deg,#075b3a,#0b8a58);
 color:white;
 padding:30px 18px;
 text-align:center;
-border-radius:0 0 28px 28px
+border-radius:0 0 30px 30px;
 }
-h1{font-size:25px;margin:10px 0}
-.sub{font-size:16px}
-main{padding:20px;max-width:760px;margin:auto}
+
+header h1{
+font-size:28px;
+margin:10px 0;
+}
+
+header p{
+font-size:18px;
+margin:8px 0;
+}
+
+main{
+padding:20px;
+max-width:800px;
+margin:auto;
+}
+
 .notice{
 background:white;
-border-radius:18px;
-padding:18px;
-margin-bottom:18px;
-box-shadow:0 4px 15px #0001
+border-radius:20px;
+padding:22px;
+margin-bottom:25px;
+box-shadow:0 5px 20px #00000012;
 }
+
+.notice h2{
+margin-top:0;
+}
+
 .grid{
 display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:14px
+grid-template-columns:1fr 1fr;
+gap:20px;
 }
+
 .card{
-border:0;
 background:white;
-border-radius:18px;
-padding:22px 10px;
-font-size:18px;
-font-weight:bold;
-box-shadow:0 4px 15px #0001;
-cursor:pointer
+border-radius:22px;
+padding:30px 15px;
+text-align:center;
+box-shadow:0 5px 20px #00000012;
+text-decoration:none;
+color:#3182ed;
+transition:.2s;
 }
-.card:active{transform:scale(.97)}
+
+.card:active{
+transform:scale(.97);
+}
+
 .icon{
+font-size:45px;
 display:block;
-font-size:32px;
-margin-bottom:8px
+margin-bottom:15px;
 }
+
+.card h2{
+margin:0;
+font-size:25px;
+}
+
+section{
+background:white;
+margin-top:25px;
+padding:25px;
+border-radius:22px;
+box-shadow:0 5px 20px #00000012;
+}
+
+section h2{
+color:#087b4b;
+}
+
 footer{
 text-align:center;
-padding:25px 15px;
-color:#555
+padding:30px;
+color:#777;
+}
+
+@media(max-width:600px){
+.grid{
+grid-template-columns:1fr 1fr;
+gap:15px;
+}
+
+.card{
+padding:25px 10px;
+}
+
+.card h2{
+font-size:21px;
+}
+
+header h1{
+font-size:24px;
+}
 }
 </style>
 </head>
@@ -63,71 +126,108 @@ color:#555
 
 <header>
 <h1>مدرسة أبو صخير الابتدائية للبنين</h1>
-<div class="sub">المناذرة – محافظة النجف الأشرف</div>
+<p>المناذرة – محافظة النجف الأشرف</p>
 </header>
 
 <main>
 
-<section class="notice">
-<b>📢 آخر الإعلانات</b>
+<div class="notice">
+<h2>📢 آخر الإعلانات</h2>
 <p>مرحباً بكم في التطبيق الرسمي للمدرسة.</p>
+</div>
+
+<div class="grid">
+
+<a class="card" href="#news">
+<span class="icon">📰</span>
+<h2>أخبار المدرسة</h2>
+</a>
+
+<a class="card" href="#ads">
+<span class="icon">📢</span>
+<h2>الإعلانات</h2>
+</a>
+
+<a class="card" href="#teachers">
+<span class="icon">👨‍🏫</span>
+<h2>المعلمون</h2>
+</a>
+
+<a class="card" href="#students">
+<span class="icon">👨‍🎓</span>
+<h2>الطلاب</h2>
+</a>
+
+<a class="card" href="#results">
+<span class="icon">📊</span>
+<h2>النتائج</h2>
+</a>
+
+<a class="card" href="#schedule">
+<span class="icon">📅</span>
+<h2>الجدول</h2>
+</a>
+
+<a class="card" href="#about">
+<span class="icon">🏫</span>
+<h2>عن المدرسة</h2>
+</a>
+
+<a class="card" href="#contact">
+<span class="icon">📞</span>
+<h2>التواصل</h2>
+</a>
+
+</div>
+
+<section id="news">
+<h2>📰 أخبار المدرسة</h2>
+<p>سيتم نشر أخبار ونشاطات المدرسة هنا.</p>
 </section>
 
-<section class="grid">
+<section id="ads">
+<h2>📢 الإعلانات</h2>
+<p>سيتم نشر الإعلانات الرسمية للمدرسة هنا.</p>
+</section>
 
-<button class="card" onclick="showMsg('📢 الإعلانات')">
-<span class="icon">📢</span>
-الإعلانات
-</button>
+<section id="teachers">
+<h2>👨‍🏫 المعلمون</h2>
+<p>معلومات وكادر المدرسة سيتم إضافتها هنا.</p>
+</section>
 
-<button class="card" onclick="showMsg('📰 أخبار المدرسة')">
-<span class="icon">📰</span>
-أخبار المدرسة
-</button>
+<section id="students">
+<h2>👨‍🎓 الطلاب</h2>
+<p>قسم خاص بالطلاب ومعلوماتهم.</p>
+</section>
 
-<button class="card" onclick="showMsg('👨‍🎓 الطلاب')">
-<span class="icon">👨‍🎓</span>
-الطلاب
-</button>
+<section id="results">
+<h2>📊 النتائج</h2>
+<p>سيتم إضافة نتائج الطلاب هنا.</p>
+</section>
 
-<button class="card" onclick="showMsg('👨‍🏫 المعلمون')">
-<span class="icon">👨‍🏫</span>
-المعلمون
-</button>
+<section id="schedule">
+<h2>📅 الجدول</h2>
+<p>سيتم إضافة جدول الدروس والدوام هنا.</p>
+</section>
 
-<button class="card" onclick="showMsg('📅 الجدول')">
-<span class="icon">📅</span>
-الجدول
-</button>
+<section id="about">
+<h2>🏫 عن المدرسة</h2>
+<p>
+مدرسة أبو صخير الابتدائية للبنين،
+تقع في المناذرة – محافظة النجف الأشرف.
+</p>
+</section>
 
-<button class="card" onclick="showMsg('📊 النتائج')">
-<span class="icon">📊</span>
-النتائج
-</button>
-
-<button class="card" onclick="showMsg('📞 التواصل')">
-<span class="icon">📞</span>
-التواصل
-</button>
-
-<button class="card" onclick="showMsg('🏫 عن المدرسة')">
-<span class="icon">🏫</span>
-عن المدرسة
-</button>
-
+<section id="contact">
+<h2>📞 التواصل</h2>
+<p>سيتم إضافة معلومات التواصل الرسمية للمدرسة هنا.</p>
 </section>
 
 </main>
 
 <footer>
-مدرسة أبو صخير الابتدائية للبنين
+مدرسة أبو صخير الابتدائية للبنين © 2026
 </footer>
-
-<script>
-function showMsg(text){
-alert(text);
-}
-</script>
 
 </body>
 </html>
