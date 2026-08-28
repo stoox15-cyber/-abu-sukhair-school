@@ -1,186 +1,285 @@
 <!DOCTYPE html>
+
 <html lang="ar" dir="rtl">
+
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>المعلمون - مدرسة أبو صخير الابتدائية للبنين</title>
+<title>المعلمون - مدرسة أبو صخير</title>
 
 <style>
+
 *{
-box-sizing:border-box;
+
+    box-sizing:border-box;
+
 }
 
 body{
-margin:0;
-font-family:Arial,sans-serif;
-background:#f5f7f6;
-color:#17211c;
+
+    margin:0;
+
+    font-family:Arial,Tahoma,sans-serif;
+
+    background:#f3f6f4;
+
+    color:#222;
+
 }
 
-header{
-background:linear-gradient(135deg,#276b48,#338458);
-color:white;
-text-align:center;
-padding:55px 20px;
-border-radius:0 0 45px 45px;
+.header{
+
+    background:linear-gradient(135deg,#174d36,#2d7655);
+
+    color:white;
+
+    text-align:center;
+
+    padding:40px 20px;
+
+    border-radius:0 0 35px 35px;
+
 }
 
-header h1{
-margin:0;
-font-size:34px;
+.header h1{
+
+    margin:0 0 10px;
+
+    font-size:32px;
+
 }
 
-header p{
-font-size:20px;
-margin-top:18px;
+.header p{
+
+    margin:0;
+
+    font-size:18px;
+
 }
 
 .container{
-padding:30px 18px;
-max-width:900px;
-margin:auto;
+
+    max-width:800px;
+
+    margin:auto;
+
+    padding:25px 15px 40px;
+
 }
 
-.title{
-background:white;
-border-radius:28px;
-padding:25px;
-text-align:center;
-box-shadow:0 8px 25px #00000010;
-margin-bottom:25px;
-}
+.add-button{
 
-.title h2{
-color:#276b48;
-font-size:30px;
-margin:0 0 12px;
-}
+    width:100%;
 
-.title p{
-font-size:18px;
-line-height:1.8;
+    border:0;
+
+    background:#174d36;
+
+    color:white;
+
+    padding:18px;
+
+    border-radius:18px;
+
+    font-size:21px;
+
+    font-weight:bold;
+
+    margin-bottom:25px;
+
 }
 
 .teacher{
-background:white;
-border-radius:25px;
-padding:25px;
-margin-bottom:18px;
-box-shadow:0 6px 20px #00000012;
-display:flex;
-align-items:center;
-gap:20px;
+
+    background:white;
+
+    padding:22px;
+
+    margin-bottom:15px;
+
+    border-radius:22px;
+
+    box-shadow:0 4px 15px #ddd;
+
 }
 
-.teacher-icon{
-width:75px;
-height:75px;
-border-radius:50%;
-background:#e8f3ed;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:38px;
-flex-shrink:0;
-}
+.teacher h2{
 
-.teacher h3{
-margin:0 0 8px;
-font-size:23px;
-color:#276b48;
+    color:#174d36;
+
+    margin-top:0;
+
 }
 
 .teacher p{
-margin:0;
-font-size:17px;
-color:#555;
+
+    font-size:18px;
+
+    margin:10px 0;
+
+}
+
+.delete{
+
+    background:#b3261e;
+
+    color:white;
+
+    border:0;
+
+    padding:10px 18px;
+
+    border-radius:10px;
+
+    font-size:16px;
+
 }
 
 .back{
-display:block;
-width:260px;
-margin:30px auto;
-padding:17px;
-text-align:center;
-background:#276b48;
-color:white;
-text-decoration:none;
-border-radius:20px;
-font-size:20px;
+
+    display:block;
+
+    text-align:center;
+
+    text-decoration:none;
+
+    background:#555;
+
+    color:white;
+
+    padding:15px;
+
+    border-radius:15px;
+
+    margin-top:25px;
+
+    font-size:18px;
+
 }
 
-.back:hover{
-background:#1d5639;
+.empty{
+
+    text-align:center;
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    color:#777;
+
 }
+
 </style>
+
 </head>
 
 <body>
 
-<header>
-<h1>مدرسة أبو صخير الابتدائية للبنين</h1>
-<p>المناذرة – محافظة النجف الأشرف</p>
-</header>
+<div class="header">
+
+    <h1>👨‍🏫 المعلمون</h1>
+
+    <p>مدرسة أبو صخير الابتدائية للبنين</p>
+
+</div>
 
 <div class="container">
 
-<div class="title">
-<h2>👨‍🏫 المعلمون</h2>
-<p>
-كادرنا التعليمي هو أساس النجاح والتميّز،
-ونسعى دائمًا إلى تقديم أفضل مستوى تعليمي وتربوي لأبنائنا الطلبة.
-</p>
-</div>
+<button class="add-button" onclick="addTeacher()">
 
-<div class="teacher">
-<div class="teacher-icon">👨‍🏫</div>
-<div>
-<h3>إدارة المدرسة</h3>
-<p>الهيئة الإدارية والتربوية</p>
-</div>
-</div>
-
-<div class="teacher">
-<div class="teacher-icon">👨‍🏫</div>
-<div>
-<h3>الكادر التعليمي</h3>
-<p>معلمو مدرسة أبو صخير الابتدائية للبنين</p>
-</div>
-</div>
-
-<a class="back" href="index.html">⬅️ العودة للرئيسية</a>
-
-</div>
-<div style="margin:30px auto;max-width:600px;">
-  <button onclick="addTeacher()" style="width:100%;padding:18px;border:0;border-radius:15px;background:#086b48;color:white;font-size:22px;font-weight:bold;">
     ➕ إضافة معلم
-  </button>
+
+</button>
+
+<div id="teachers">
+
+<div class="teacher">
+
+    <h2>👨‍🏫 إدارة المدرسة</h2>
+
+    <p>🏫 مدرسة أبو صخير الابتدائية للبنين</p>
+
+</div>
+
+</div>
+
+<a class="back" href="index.html">
+
+    ↩️ العودة للرئيسية
+
+</a>
+
 </div>
 
 <script>
+
 function addTeacher(){
-  const name = prompt("اكتب اسم المعلم:");
-  if(!name) return;
 
-  const subject = prompt("اكتب الاختصاص:");
-  const grade = prompt("اكتب الصف:");
+    let name = prompt("اكتب اسم المعلم:");
 
-  const card = document.createElement("div");
-  card.style.cssText =
-    "margin:15px auto;padding:20px;max-width:600px;background:white;border-radius:15px;text-align:right;box-shadow:0 3px 12px #ccc;";
+    if(!name){
 
-  card.innerHTML = `
-    <h2>👨‍🏫 ${name}</h2>
-    <p>📚 الاختصاص: ${subject || "غير محدد"}</p>
-    <p>🏫 الصف: ${grade || "غير محدد"}</p>
-    <button onclick="this.parentElement.remove()" style="padding:10px 20px;border:0;border-radius:10px;background:#c62828;color:white;">
-      حذف
-    </button>
-  `;
+        return;
 
-  document.body.appendChild(card);
+    }
+
+    let subject = prompt("اكتب المادة أو الاختصاص:");
+
+    if(!subject){
+
+        subject = "غير محدد";
+
+    }
+
+    let grade = prompt("اكتب الصف الذي يدرّسه:");
+
+    if(!grade){
+
+        grade = "غير محدد";
+
+    }
+
+    let phone = prompt("اكتب رقم الهاتف (اختياري):");
+
+    if(!phone){
+
+        phone = "غير متوفر";
+
+    }
+
+    let teacher = document.createElement("div");
+
+    teacher.className = "teacher";
+
+    teacher.innerHTML = `
+
+        <h2>👨‍🏫 ${name}</h2>
+
+        <p>📚 المادة: ${subject}</p>
+
+        <p>🏫 الصف: ${grade}</p>
+
+        <p>📞 الهاتف: ${phone}</p>
+
+        <button class="delete" onclick="this.parentElement.remove()">
+
+            🗑️ حذف
+
+        </button>
+
+    `;
+
+    document.getElementById("teachers").appendChild(teacher);
+
 }
+
 </script>
+
 </body>
+
 </html>
